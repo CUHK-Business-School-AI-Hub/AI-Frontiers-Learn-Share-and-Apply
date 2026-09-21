@@ -1,6 +1,6 @@
 # AI Frontiers: Learn, Share, Apply
 
-Welcome to **AI Frontiers**, the AI Hub’s monthly training and knowledge-sharing series for faculty and staff at CUHK Business School, with colleagues from across the Faculty and beyond welcome to join.
+**AI Frontiers** is the AI Hub’s monthly internal training and knowledge-sharing series for faculty and staff at CUHK Business School.
 
 AI is moving quickly, and it can be hard to know where to start or what is worth trying. This series gives us a chance to explore it together: try useful tools, learn from each other’s experience, and find ways to put AI to work in research, teaching and everyday tasks.
 
@@ -23,9 +23,9 @@ Topics will include:
 - **Responsible use of AI** — thinking through data, responsible AI and governance questions.
 - **New developments** — emerging technologies and other topics our community wants to explore.
 
-## Come as you are
+## Learning at every level
 
-You are welcome whether you are just getting curious about AI or already using it regularly. Bring your questions, something you would like to try, or an experience others could learn from. There is room to learn at every level, and you do not need to have all the answers to take part.
+The series covers a range of experience levels, from colleagues just getting curious about AI to those already using it regularly. Sessions make room for questions, practical exploration and learning from each other’s experience.
 
 ## Have something to share?
 
