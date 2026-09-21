@@ -4,15 +4,11 @@ Welcome to **AI Frontiers**, the AI Hub’s monthly training and knowledge-shari
 
 AI is moving quickly, and it can be hard to know where to start or what is worth trying. This series gives us a chance to explore it together: try useful tools, learn from each other’s experience, and find ways to put AI to work in research, teaching and everyday tasks.
 
-## Our first session · 29 September 2026
+## Sessions
 
-### From AI Chat to Better Knowledge Work: Build, Verify, and Reuse
-
-Join **Prof. Philip Zhang** for a practical, interactive session on using AI in teaching, research and administration. We’ll explore how to turn a real task into a useful output, check the results, and make successful approaches easier to reuse. All faculty members, RPg students and admin staff are welcome—no coding background is required.
-
-**Tuesday, 29 September 2026 · 2:30–4:00 pm · CYT 928, Cheng Yu Tung Building, CUHK**
-
-[Read the full session details and abstract →](events/2026-09-29-build-verify-reuse.md)
+| Session | Date | Topic |
+| --- | --- | --- |
+| 01 | 29 September 2026 | [From AI Chat to Better Knowledge Work: Build, Verify, and Reuse](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/events/2026-09-29-build-verify-reuse.html) — Prof. Philip Zhang on building, checking and reusing AI workflows. |
 
 ## What to expect
 
