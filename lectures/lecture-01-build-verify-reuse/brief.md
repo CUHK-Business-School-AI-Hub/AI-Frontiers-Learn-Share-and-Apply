@@ -1,6 +1,6 @@
 # From AI Chat to Better Knowledge Work: Build, Verify, and Reuse
 
-**AI Frontiers: Learn, Share, Apply · Session 1**
+**AI Frontiers: Learn, Share, Apply · Lecture 01**
 
 The Chinese University of Hong Kong · CUHK Business School · AI Hub for Business
 
@@ -23,4 +23,4 @@ Generative AI gives us a new way to put computing power to work: natural languag
 
 *Event details and abstract reproduced from the AI Lab (BAF) announcement dated 17 September 2026.*
 
-[← Back to AI Frontiers](../README.md)
+[← Lecture 01 resources](README.md) · [All lectures](../../README.md)

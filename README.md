@@ -1,14 +1,29 @@
 # AI Frontiers: Learn, Share, Apply
 
-**AI Frontiers** is the AI Hub’s monthly internal training and knowledge-sharing series for faculty and staff at CUHK Business School.
+AI Frontiers is CUHK Business School AI Hub's monthly internal training and knowledge-sharing series for faculty and staff. The materials in this repository are approved for public sharing.
 
-AI is moving quickly, and it can be hard to know where to start or what is worth trying. This series gives us a chance to explore it together: try useful tools, learn from each other’s experience, and find ways to put AI to work in research, teaching and everyday tasks.
+## Find a lecture or resource
 
-## Sessions
+| Lecture | Date | Overview and materials | Slides | Exercises |
+|---|---|---|---|---|
+| 01 · Build, Verify, and Reuse | 29 September 2026 | [Resource guide](lectures/lecture-01-build-verify-reuse/README.md) · [Event brief](lectures/lecture-01-build-verify-reuse/brief.md) | [View online](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/lectures/lecture-01-build-verify-reuse/slides.html) | [Computer Use](lectures/lecture-01-build-verify-reuse/computer-use/README.md) · [Agent Management](lectures/lecture-01-build-verify-reuse/agent-management/README.md) |
 
-| Session | Date | Topic |
-| --- | --- | --- |
-| 01 | 29 September 2026 | [From AI Chat to Better Knowledge Work: Build, Verify, and Reuse](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/events/2026-09-29-build-verify-reuse.html) — Prof. Philip Zhang on building, checking and reusing AI workflows. |
+**New here?** Open a lecture's resource guide. It tells you what to read, which exercise to try, and what each file does. No coding background is required.
+
+- **Browse:** use the [series website](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/) for event information and online slides.
+- **Practice:** open an exercise guide, then use GitHub's **Code → Download ZIP** and extract the repository to work with the files locally. Each exercise folder can be copied independently.
+- **Teach:** use the lecture's instructor guide and read the answer key after the exercise.
+
+## Repository map
+
+| Item | Purpose |
+|---|---|
+| [README.md](README.md) | Series introduction and direct links to each lecture's resources. |
+| [lectures/](lectures/) | Canonical course materials, organized by lecture and exercise. Start with each lecture's README. |
+| [docs/](docs/README.md) | GitHub Pages website: event pages, stylesheet, and generated slide copies. |
+| [scripts/build_site.py](scripts/build_site.py) | Copy canonical slides into the website's publication directory. |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Naming rules, new-lecture checklist, hosting, and Google Drive sharing settings. |
+| [.gitignore](.gitignore) | Exclude local operating-system and Python cache files from version control. |
 
 ## What to expect
 
