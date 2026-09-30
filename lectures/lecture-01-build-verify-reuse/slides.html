@@ -23,7 +23,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       overflow: hidden;
     }
-    #stage { position: fixed; inset: 0; overflow: hidden; }
+    #stage { position: fixed; inset: 0 0 70px; overflow: hidden; }
     #deck {
       position: absolute;
       width: 1600px;
@@ -263,18 +263,20 @@
     .memory-care-columns p { margin-top: 12px; font-size: 25px; line-height: 1.4; }
     .memory-maintenance .memory-links { margin-top: 30px; }
     .page-number { position: absolute; right: 112px; bottom: 33px; font-size: 18px; color: var(--muted); }
+    /* Navigation stays visible, outside the scaled slide canvas. */
     .controls {
-      position: fixed; bottom: 12px; right: 15px; z-index: 10;
-      display: flex; align-items: center; gap: 8px;
-      padding: 5px; border-radius: 8px;
-      background: rgba(247,246,241,.95);
-      opacity: 0; transition: opacity .15s ease;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+      min-height: 70px; display: flex; align-items: center; justify-content: center; gap: 12px;
+      padding: 10px 16px max(10px, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line); background: var(--bg);
     }
-    body.show-controls .controls, .controls:hover, .controls:focus-within { opacity: 1; }
-    button { font: inherit; font-size: 14px; padding: 8px 11px; color: var(--ink); border: 1px solid var(--line); border-radius: 5px; background: #fff; cursor: pointer; }
+    button { font: inherit; font-size: 14px; min-width: 44px; min-height: 44px; padding: 10px 14px; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; background: #fff; cursor: pointer; }
     button:disabled { opacity: .4; cursor: default; }
     button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
-    .controls output { min-width: 40px; text-align: center; font-size: 13px; color: var(--muted); }
+    .controls output { min-width: 58px; text-align: center; font-size: 14px; font-variant-numeric: tabular-nums; color: var(--muted); }
+    .viewing-tip { position: fixed; top: 16px; left: 20px; right: 20px; display: none; text-align: center; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    @media (max-width: 600px) and (orientation: portrait) { .viewing-tip { display: block; } }
+    @media (max-width: 380px) { .controls { gap: 8px; padding-left: 8px; padding-right: 8px; } button { padding-left: 10px; padding-right: 10px; } }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     @media (prefers-reduced-motion: reduce) { .controls { transition: none; } }
     @media print {
@@ -284,7 +286,7 @@
       #deck { position: static; width: 1600px; height: auto; transform: none; }
       .slide, .slide:not(.active) { display: block !important; position: relative; width: 1600px; height: 900px; break-after: page; break-inside: avoid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .slide:last-child { break-after: auto; }
-      .controls, .sr-only { display: none; }
+      .controls, .sr-only, .viewing-tip { display: none; }
     }
     .management-hero { margin-top: 47px; font-size: 68px; line-height: 1.18; font-weight: 600; letter-spacing: -.02em; }
     .management-hero strong { color: var(--accent); font-weight: inherit; }
@@ -1292,6 +1294,7 @@ Title should be &quot;Welcome to AI Frontiers!&quot; Make the HTML content visua
 
     </main>
   </div>
+  <p class="viewing-tip">Rotate your phone for larger slides.<br>Swipe or use the arrows to navigate.</p>
   <nav class="controls" aria-label="Presentation controls">
     <button id="previous" type="button" aria-label="Previous slide" title="Previous slide (Left arrow)">←</button>
     <output id="position" aria-label="Current slide">1 / 43</output>
@@ -1306,9 +1309,11 @@ Title should be &quot;Welcome to AI Frontiers!&quot; Make the HTML content visua
       const next = document.getElementById('next');
       const position = document.getElementById('position');
       let current = 0;
-      let controlsTimer;
+      const stage = document.getElementById('stage');
+      const controls = document.querySelector('.controls');
       function fit() {
-        document.documentElement.style.setProperty('--scale', Math.min(innerWidth / 1600, innerHeight / 900));
+        stage.style.bottom = controls.getBoundingClientRect().height + 'px';
+        document.documentElement.style.setProperty('--scale', Math.min(stage.clientWidth / 1600, stage.clientHeight / 900));
       }
       function show(index, updateHash = true) {
         current = Math.max(0, Math.min(slides.length - 1, index));
@@ -1327,16 +1332,11 @@ Title should be &quot;Welcome to AI Frontiers!&quot; Make the HTML content visua
         const match = location.hash.match(/^#slide-(\d+)$/);
         show(match ? Number(match[1]) - 1 : 0, false);
       }
-      function revealControls() {
-        document.body.classList.add('show-controls');
-        clearTimeout(controlsTimer);
-        controlsTimer = setTimeout(() => document.body.classList.remove('show-controls'), 2000);
-      }
       async function fullscreen() {
         try {
           if (document.fullscreenElement) await document.exitFullscreen();
           else if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
-        } catch { revealControls(); }
+        } catch { document.getElementById('announcement').textContent = 'Fullscreen is unavailable in this browser. You can continue using the slides here.'; }
       }
       previous.addEventListener('click', () => show(current - 1));
       next.addEventListener('click', () => show(current + 1));
@@ -1358,11 +1358,12 @@ Title should be &quot;Welcome to AI Frontiers!&quot; Make the HTML content visua
         const dy = e.changedTouches[0].clientY - touchStart.clientY;
         if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
         touchStart = null;
-        revealControls();
       }, {passive: true});
       addEventListener('resize', fit);
+      document.addEventListener('fullscreenchange', fit);
+      if (window.visualViewport) window.visualViewport.addEventListener('resize', fit);
+      new ResizeObserver(fit).observe(controls);
       addEventListener('hashchange', readHash);
-      addEventListener('pointermove', revealControls);
       fit();
       readHash();
     })();
