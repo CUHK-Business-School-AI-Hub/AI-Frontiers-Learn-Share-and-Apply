@@ -1,6 +1,6 @@
 # AI Frontiers: Learn, Share, Apply
 
-AI Frontiers is CUHK Business School AI Hub's monthly internal training and knowledge-sharing series for faculty and staff. The materials in this repository are approved for public sharing.
+AI Frontiers is CUHK Business School AI Initiatives’ monthly internal training and knowledge-sharing series for faculty and staff. The materials in this repository are approved for public sharing.
 
 ## Find a lecture or resource
 
@@ -34,7 +34,7 @@ Topics will include:
 
 - **AI in research and teaching** — practical examples and approaches you can learn from.
 - **AI agents and workflows** — how agents work and where they might help with your tasks.
-- **Tools to try** — open-source tools for AI research and development, alongside toolkits and platforms built by the AI Hub.
+- **Tools to try** — open-source tools for AI research and development, alongside toolkits and platforms shared through the series.
 - **Computing resources** — how to get started with high-performance computing (HPC) clusters and use the resources available.
 - **Responsible use of AI** — thinking through data, responsible AI and governance questions.
 - **New developments** — emerging technologies and other topics our community wants to explore.
@@ -47,4 +47,4 @@ The series covers a range of experience levels, from colleagues just getting cur
 
 Found a useful tool? Tried an approach that worked well—or one that taught you what to avoid? We would love to hear about it.
 
-You can lead or contribute to a session, share a case study, or suggest a topic you would like us to cover. To get involved, contact **Prof. [Philip Zhang](https://rphilipzhang.github.io/rphilipzhang/)**, Co-director of AI Hub for Business, at [philipzhang@cuhk.edu.hk](mailto:philipzhang@cuhk.edu.hk).
+You can lead or contribute to a session, share a case study, or suggest a topic you would like us to cover. To get involved, contact **Prof. [Philip Zhang](https://rphilipzhang.github.io/rphilipzhang/)** at [philipzhang@cuhk.edu.hk](mailto:philipzhang@cuhk.edu.hk).
