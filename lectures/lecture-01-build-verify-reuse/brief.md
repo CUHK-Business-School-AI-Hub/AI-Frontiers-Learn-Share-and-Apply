@@ -2,7 +2,7 @@
 
 **AI Frontiers: Learn, Share, Apply · Lecture 01**
 
-The Chinese University of Hong Kong · CUHK Business School · AI Hub for Business
+The Chinese University of Hong Kong · CUHK Business School AI Initiatives
 
 | | Details |
 | --- | --- |
