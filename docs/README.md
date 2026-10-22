@@ -6,6 +6,7 @@ This folder contains the GitHub Pages publication files. Start with the [series 
 |---|---|
 | [index.html](index.html) | Website home page and lecture listing. |
 | [events/2026-09-29-build-verify-reuse.html](events/2026-09-29-build-verify-reuse.html) | Lecture 01 event information and resource links; preserves the original published address. |
+| [events/2026-10-27-ai-in-teaching.html](events/2026-10-27-ai-in-teaching.html) | Lecture 02 event information and resource links. |
 | [style.css](style.css) | Shared layout and typography for website pages. |
 | [.nojekyll](.nojekyll) | Publish the static files without Jekyll processing. |
 | [lectures/lecture-01-build-verify-reuse/slides.html](lectures/lecture-01-build-verify-reuse/slides.html) | Generated online copy of the canonical Lecture 01 slides. |
