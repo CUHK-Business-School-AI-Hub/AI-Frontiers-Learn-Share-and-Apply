@@ -22,7 +22,7 @@ The session covers the progression from LLM-powered data operations to agents fo
 | [Event brief](brief.md) | Full abstract, speaker biography, time, venue and audience. |
 | [Event page](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/events/2026-11-10-agentic-discovery.html) | Website entry for Lecture 03 (External Speaker Seminar #1). |
 
-Slides, a recording and exercises have not yet been added. The 6 November announcement provides event information, the abstract and speaker biography.
+Slides and exercises are not applicable to this session. The 6 November announcement provides event information, the abstract and speaker biography.
 
 ## Series numbering
 

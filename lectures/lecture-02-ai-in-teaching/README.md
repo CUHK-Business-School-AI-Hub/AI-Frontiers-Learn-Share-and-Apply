@@ -20,6 +20,6 @@ The session explores how AI can help review teaching materials and how to guide 
 | [Event brief](brief.md) | Full abstract, speaker, time, venue, and joining details. |
 | [Event page](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/events/2026-10-27-ai-in-teaching.html) | Website entry for Lecture 02. |
 
-Slides and exercises have not yet been added. The 22 October announcement provides event information only.
+Slides and exercises are not applicable to this session. The 22 October announcement provides event information only.
 
 [← All lectures](../../README.md)
