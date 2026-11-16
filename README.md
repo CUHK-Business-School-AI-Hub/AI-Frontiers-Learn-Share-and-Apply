@@ -8,12 +8,15 @@ AI Frontiers is CUHK Business School AI Initiatives’ monthly internal training
 |---|---|---|---|---|
 | 01 · Build, Verify, and Reuse | 29 September 2026 | [Resource guide](lectures/lecture-01-build-verify-reuse/README.md) · [Event brief](lectures/lecture-01-build-verify-reuse/brief.md) | [View online](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/lectures/lecture-01-build-verify-reuse/slides.html) | [Computer Use](lectures/lecture-01-build-verify-reuse/computer-use/README.md) · [Agent Management](lectures/lecture-01-build-verify-reuse/agent-management/README.md) |
 | 02 · Using AI in Teaching | 27 October 2026 | [Resource guide](lectures/lecture-02-ai-in-teaching/README.md) · [Event brief](lectures/lecture-02-ai-in-teaching/brief.md) | Not yet available | Not yet available |
+| 03 · From Agent Harness to Agentic Discovery (External Speaker Seminar #1) | 10 November 2026 | [Resource guide](lectures/lecture-03-agentic-discovery/README.md) · [Event brief](lectures/lecture-03-agentic-discovery/brief.md) | Not yet available | Not yet available |
 
 **New here?** Open a lecture's resource guide. It tells you what to read, which exercise to try, and what each file does. No coding background is required.
 
 - **Browse:** use the [series website](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/) for event information and online slides.
 - **Practice:** open an exercise guide, then use GitHub's **Code → Download ZIP** and extract the repository to work with the files locally. Each exercise folder can be copied independently.
 - **Teach:** use the lecture's instructor guide and read the answer key after the exercise.
+
+Lecture numbers run consecutively across all AI Frontiers sessions. External speaker seminars also carry an independent **External Speaker Seminar #N** number, which advances only for those events.
 
 ## Repository map
 

@@ -5,6 +5,8 @@ All documentation, navigation, file descriptions, and exercise instructions are 
 ## Naming and file roles
 
 - Display lecture numbers as `Lecture 01`, `Lecture 02`, and so on.
+- Keep lecture numbers consecutive across all sessions. External speaker seminars also use an independent `External Speaker Seminar #N` sequence. For example, `Lecture 03 (External Speaker Seminar #1)`; internal sessions advance only the lecture number.
+- Preserve the organiser name stated in each event announcement on its event page and brief.
 - Use `lectures/lecture-NN-short-topic/` for each lecture. Use lowercase file names with hyphens, except `README.md` and conventional Python names such as `check_promotion.py`.
 - Put the date and full title in the lecture README and brief. Avoid repeating them in every file name.
 - Each lecture has a README resource map, a brief, slides where available, and descriptive exercise folders.
