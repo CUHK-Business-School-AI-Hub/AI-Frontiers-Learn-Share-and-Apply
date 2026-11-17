@@ -9,6 +9,7 @@ AI Frontiers is CUHK Business School AI Initiatives’ monthly internal training
 | 01 · Build, Verify, and Reuse | 29 September 2026 | [Resource guide](lectures/lecture-01-build-verify-reuse/README.md) · [Event brief](lectures/lecture-01-build-verify-reuse/brief.md) | [View online](https://cuhk-business-school-ai-hub.github.io/AI-Frontiers-Learn-Share-and-Apply/lectures/lecture-01-build-verify-reuse/slides.html) | [Computer Use](lectures/lecture-01-build-verify-reuse/computer-use/README.md) · [Agent Management](lectures/lecture-01-build-verify-reuse/agent-management/README.md) |
 | 02 · Using AI in Teaching | 27 October 2026 | [Resource guide](lectures/lecture-02-ai-in-teaching/README.md) · [Event brief](lectures/lecture-02-ai-in-teaching/brief.md) | Not applicable to this session | Not applicable to this session |
 | 03 · From Agent Harness to Agentic Discovery (External Speaker Seminar #1) | 10 November 2026 | [Resource guide](lectures/lecture-03-agentic-discovery/README.md) · [Event brief](lectures/lecture-03-agentic-discovery/brief.md) | Not applicable to this session | Not applicable to this session |
+| 04 · AI Hub for Research – External Speaker Seminar #2 | 1 December 2026 | [Resource guide](lectures/lecture-04-external-speaker-seminar-2/README.md) · [Event brief](lectures/lecture-04-external-speaker-seminar-2/brief.md) | TBD | TBD |
 
 **New here?** Open a lecture's resource guide. It tells you what to read, which exercise to try, and what each file does. No coding background is required.
 
