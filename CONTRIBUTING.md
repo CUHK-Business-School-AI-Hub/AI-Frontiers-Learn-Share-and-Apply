@@ -13,6 +13,7 @@ All documentation, navigation, file descriptions, and exercise instructions are 
 - Each exercise guide explains its purpose, prerequisites, starting prompt or steps, every supplied file, and expected outputs.
 - Keep instructor instructions separate from learner quick starts. Clearly label deliberately flawed examples and answer keys.
 - Use relative links within the repository. Use website URLs for online slides and explicit download links for attachments.
+- Underline only links with valid destinations. Keep unavailable resources and TBD placeholders as plain text; check destinations before publishing.
 - Preserve exact checker-required headings such as `## Expected facts`, `## LinkedIn`, `## INFORMS`, and `## Email`.
 
 ## Add or update a lecture
